@@ -15,7 +15,7 @@ class MoreDataAnalysis:
         print('3. REGION' + '           ' + 'Nominal')
         print('4. NUM' + '              ' + 'Interval')
         while True:
-            num1 = input('Enter a variable: ')
+            num1 = input('Enter a variable（from 2 to 4: ')
             if num1 == '2':
                 variable1 = 'Country'
                 break
@@ -26,10 +26,10 @@ class MoreDataAnalysis:
                 variable1 = 'NUM'
                 break
             else:
-                print('Invalid input, please enter a number between 1 and 4')
+                print('Invalid input')
 
         while True:
-            num2 = input('Enter a continuous (interval/ratio) variable: ')
+            num2 = input('Enter a continuous (interval/ratio) variable(but not NUM): ')
             if num2 == '1':
                 variable2 = 'Valuation ($B)'
                 break
